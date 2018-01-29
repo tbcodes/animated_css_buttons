@@ -1,0 +1,100 @@
+/*Clear default browser style*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/*Let's define our bg color*/
+body {
+  background-color: #2980b9;
+}
+
+/*Let's center the container*/
+.container {
+  padding: 20px;
+  width: 200px;
+  margin: 0 auto;
+
+}
+/*Let's configure general settings for our buttons*/
+button {
+  padding: 20px;
+  font-size: 1.2em;
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 20px;
+
+}
+/*Working with the first buttton (class btn1)*/
+.btn1 {
+  background-color: #fff;
+  color:#2980b9;
+  border: 3px solid transparent;
+  transition-property: background-color, color, border;
+  transition-duration: 0.4s;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+/*Working with the second buttton (class btn2)*/
+/*Button #2*/
+.btn2 {
+  position: relative;
+}
+
+.btn2:hover::before {
+  width: 100%;
+}
+
+.btn2::before {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: width 0.3s;
+}
+
+/*Working with the third buttton (class btn3)*/
+/*Button #3*/
+
+.btn3 {
+  position: relative;
+}
+
+.btn3:hover::before {
+  width: 100%;
+}
+
+.btn3::before {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: width 0.3s;
+}
+
+  .btn3:hover::after {
+    height: 100%;
+  }
+
+.btn3::after {
+  content: '';
+  height: 0%;
+  width: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: height 0.3s;
+}
